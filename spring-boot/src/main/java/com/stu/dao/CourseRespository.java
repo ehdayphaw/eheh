@@ -14,7 +14,7 @@ public interface CourseRespository extends CrudRepository<CourseBean, String> {
 	@Query("SELECT COUNT(c) FROM CourseBean c WHERE c.name = :courseName")
     int countByName(@Param("courseName") String courseName);
 	//method in courseRespository
-	
+	//repository github
 	@Query("SELECT COUNT(c) + 1 FROM CourseBean c")
     Long getNextCourseId();
 	
